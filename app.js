@@ -42,7 +42,7 @@ router.post("/send", (req, res) => {
       } else {
         const date = Date.now().toString();
         const uri = "ncp:sms:kr:261426550999:feather";
-        const secretKey = "hgoeVr10WAkpwDe1ZgvnO4eX7EhUKukdKre6dDuj";
+        const secretKey = "***";
         const accessKey = "rIRf6KK05kXcF40PKwCM";
         const method = "POST";
         const space = " ";
