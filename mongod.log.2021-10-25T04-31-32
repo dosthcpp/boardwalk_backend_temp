@@ -1,0 +1,100 @@
+2021-10-20T11:51:44.702+0900 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2021-10-20T11:51:44.707+0900 W  ASIO     [main] No TransportLayer configured during NetworkInterface startup
+2021-10-20T11:51:44.710+0900 I  CONTROL  [initandlisten] MongoDB starting : pid=66692 port=27017 dbpath=/Users/babosangjamk4/data/db 64-bit host=DOYEONui-Macmini.local
+2021-10-20T11:51:44.710+0900 I  CONTROL  [initandlisten] db version v4.2.6
+2021-10-20T11:51:44.711+0900 I  CONTROL  [initandlisten] git version: 20364840b8f1af16917e4c23c1b5f5efd8b352f8
+2021-10-20T11:51:44.711+0900 I  CONTROL  [initandlisten] allocator: system
+2021-10-20T11:51:44.711+0900 I  CONTROL  [initandlisten] modules: none
+2021-10-20T11:51:44.711+0900 I  CONTROL  [initandlisten] build environment:
+2021-10-20T11:51:44.711+0900 I  CONTROL  [initandlisten]     distarch: x86_64
+2021-10-20T11:51:44.712+0900 I  CONTROL  [initandlisten]     target_arch: x86_64
+2021-10-20T11:51:44.712+0900 I  CONTROL  [initandlisten] machdep.cpu.extfeatures unavailable
+2021-10-20T11:51:44.713+0900 I  CONTROL  [initandlisten] options: { processManagement: { fork: true }, storage: { dbPath: "/Users/babosangjamk4/data/db" }, systemLog: { destination: "file", path: "./mongod.log" } }
+2021-10-20T11:51:44.714+0900 W  STORAGE  [initandlisten] Detected unclean shutdown - /Users/babosangjamk4/data/db/mongod.lock is not empty.
+2021-10-20T11:51:44.715+0900 I  STORAGE  [initandlisten] Detected data files in /Users/babosangjamk4/data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2021-10-20T11:51:44.716+0900 W  STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2021-10-20T11:51:44.716+0900 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+2021-10-20T11:51:45.475+0900 I  STORAGE  [initandlisten] WiredTiger message [1634698305:475183][66692:0x206f1ce00], txn-recover: Recovering log 79 through 80
+2021-10-20T11:51:45.554+0900 I  STORAGE  [initandlisten] WiredTiger message [1634698305:554096][66692:0x206f1ce00], txn-recover: Recovering log 80 through 80
+2021-10-20T11:51:45.616+0900 I  STORAGE  [initandlisten] WiredTiger message [1634698305:616904][66692:0x206f1ce00], txn-recover: Main recovery loop: starting at 79/12288 to 80/256
+2021-10-20T11:51:45.681+0900 I  STORAGE  [initandlisten] WiredTiger message [1634698305:681760][66692:0x206f1ce00], txn-recover: Recovering log 79 through 80
+2021-10-20T11:51:45.733+0900 I  STORAGE  [initandlisten] WiredTiger message [1634698305:733911][66692:0x206f1ce00], txn-recover: Recovering log 80 through 80
+2021-10-20T11:51:45.763+0900 I  STORAGE  [initandlisten] WiredTiger message [1634698305:763783][66692:0x206f1ce00], txn-recover: Set global recovery timestamp: (0, 0)
+2021-10-20T11:51:46.012+0900 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2021-10-20T11:51:46.028+0900 I  STORAGE  [initandlisten] Timestamp monitor starting
+2021-10-20T11:51:46.028+0900 I  CONTROL  [initandlisten] 
+2021-10-20T11:51:46.029+0900 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2021-10-20T11:51:46.029+0900 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2021-10-20T11:51:46.029+0900 I  CONTROL  [initandlisten] 
+2021-10-20T11:51:46.030+0900 I  CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2021-10-20T11:51:46.030+0900 I  CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2021-10-20T11:51:46.030+0900 I  CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2021-10-20T11:51:46.031+0900 I  CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2021-10-20T11:51:46.031+0900 I  CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2021-10-20T11:51:46.031+0900 I  CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2021-10-20T11:51:46.032+0900 I  CONTROL  [initandlisten] 
+2021-10-20T11:51:46.032+0900 I  CONTROL  [initandlisten] 
+2021-10-20T11:51:46.033+0900 I  CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2021-10-20T11:51:46.051+0900 I  SHARDING [initandlisten] Marking collection local.system.replset as collection version: <unsharded>
+2021-10-20T11:51:46.056+0900 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2021-10-20T11:51:46.059+0900 I  SHARDING [initandlisten] Marking collection admin.system.roles as collection version: <unsharded>
+2021-10-20T11:51:46.060+0900 I  SHARDING [initandlisten] Marking collection admin.system.version as collection version: <unsharded>
+2021-10-20T11:51:46.063+0900 I  SHARDING [initandlisten] Marking collection local.startup_log as collection version: <unsharded>
+2021-10-20T11:51:46.064+0900 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/Users/babosangjamk4/data/db/diagnostic.data'
+2021-10-20T11:51:46.080+0900 I  NETWORK  [listener] Listening on /tmp/mongodb-27017.sock
+2021-10-20T11:51:46.080+0900 I  SHARDING [LogicalSessionCacheReap] Marking collection config.system.sessions as collection version: <unsharded>
+2021-10-20T11:51:46.080+0900 I  NETWORK  [listener] Listening on 127.0.0.1
+2021-10-20T11:51:46.081+0900 I  NETWORK  [listener] waiting for connections on port 27017
+2021-10-20T11:51:46.081+0900 I  SHARDING [LogicalSessionCacheReap] Marking collection config.transactions as collection version: <unsharded>
+2021-10-20T11:51:46.601+0900 I  NETWORK  [listener] connection accepted from 127.0.0.1:61145 #1 (1 connection now open)
+2021-10-20T11:51:46.605+0900 I  NETWORK  [conn1] received client metadata from 127.0.0.1:61145 conn1: { driver: { name: "nodejs", version: "3.6.11" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "20.6.0" }, platform: "'Node.js v14.17.4, LE (legacy)" }
+2021-10-20T11:51:46.613+0900 I  SHARDING [conn1] Marking collection feather.boardwalk as collection version: <unsharded>
+2021-10-20T11:51:47.028+0900 I  FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2021-10-20T11:51:47.077+0900 I  SHARDING [ftdc] Marking collection local.oplog.rs as collection version: <unsharded>
+2021-10-20T21:30:14.283+0900 I  NETWORK  [conn1] end connection 127.0.0.1:61145 (0 connections now open)
+2021-10-25T13:31:33.359+0900 I  NETWORK  [listener] connection accepted from 127.0.0.1:52228 #2 (1 connection now open)
+2021-10-25T13:31:33.362+0900 I  NETWORK  [conn2] received client metadata from 127.0.0.1:52228 conn2: { driver: { name: "nodejs", version: "3.6.11" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "20.6.0" }, platform: "'Node.js v14.17.4, LE (legacy)" }
+2021-10-25T13:33:34.349+0900 I  NETWORK  [listener] connection accepted from 127.0.0.1:52520 #3 (2 connections now open)
+2021-10-25T13:33:34.350+0900 I  NETWORK  [conn3] received client metadata from 127.0.0.1:52520 conn3: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "20.6.0" } }
+2021-10-25T13:33:41.050+0900 I  SHARDING [conn3] Marking collection test.boardwalk as collection version: <unsharded>
+2021-10-25T13:39:10.989+0900 I  COMMAND  [conn3] CMD: drop feather.boardwalk
+2021-10-25T13:39:10.993+0900 I  STORAGE  [conn3] Finishing collection drop for feather.boardwalk (4f327f9c-ae14-486c-91ea-a7ca2f893b47).
+2021-10-25T13:39:11.095+0900 I  COMMAND  [conn3] command feather.boardwalk appName: "MongoDB Shell" command: drop { drop: "boardwalk", lsid: { id: UUID("d40e9db2-18dc-4640-a112-1f39246e3f51") }, $db: "feather" } numYields:0 reslen:81 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 1 } }, ReplicationStateTransition: { acquireCount: { w: 1 } }, Global: { acquireCount: { w: 1 } }, Database: { acquireCount: { w: 1 } }, Collection: { acquireCount: { W: 1 } }, Mutex: { acquireCount: { r: 1 } } } flowControl:{ acquireCount: 1, timeAcquiringMicros: 3 } storage:{} protocol:op_msg 105ms
+2021-10-25T13:40:33.293+0900 I  COMMAND  [conn3] CMD: drop feather.boardwalk
+2021-10-25T14:23:44.452+0900 I  COMMAND  [conn3] CMD: drop feather.boardwalk
+2021-10-25T15:01:42.758+0900 I  STORAGE  [conn2] createCollection: feather.boardwalk with generated UUID: 08323950-d69d-4630-88ea-2c009494d7f4 and options: {}
+2021-10-25T15:01:42.829+0900 I  INDEX    [conn2] index build: done building index _id_ on ns feather.boardwalk
+2021-10-25T18:48:07.564+0900 I  COMMAND  [conn3] CMD: drop feather.boardwalk
+2021-10-25T18:48:07.574+0900 I  STORAGE  [conn3] Finishing collection drop for feather.boardwalk (08323950-d69d-4630-88ea-2c009494d7f4).
+2021-10-25T18:49:22.218+0900 I  STORAGE  [conn2] createCollection: feather.boardwalk with generated UUID: 6a45ec5b-61e0-4a4b-acd2-7aac51a43f99 and options: {}
+2021-10-25T18:49:22.305+0900 I  INDEX    [conn2] index build: done building index _id_ on ns feather.boardwalk
+2021-10-25T18:49:30.070+0900 I  COMMAND  [conn3] CMD: drop feather.boardwalk
+2021-10-25T18:49:30.072+0900 I  STORAGE  [conn3] Finishing collection drop for feather.boardwalk (6a45ec5b-61e0-4a4b-acd2-7aac51a43f99).
+2021-10-25T18:49:37.254+0900 I  NETWORK  [listener] connection accepted from 127.0.0.1:49468 #4 (3 connections now open)
+2021-10-25T18:49:37.257+0900 I  NETWORK  [conn4] received client metadata from 127.0.0.1:49468 conn4: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.6" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "20.6.0" } }
+2021-10-25T18:49:37.276+0900 I  NETWORK  [conn4] end connection 127.0.0.1:49468 (2 connections now open)
+2021-10-25T18:49:37.281+0900 I  NETWORK  [conn3] end connection 127.0.0.1:52520 (1 connection now open)
+2021-10-25T18:49:38.191+0900 I  NETWORK  [conn2] end connection 127.0.0.1:52228 (0 connections now open)
+2021-10-25T18:55:36.420+0900 I  NETWORK  [listener] connection accepted from 127.0.0.1:49848 #5 (1 connection now open)
+2021-10-25T18:55:36.423+0900 I  NETWORK  [conn5] received client metadata from 127.0.0.1:49848 conn5: { driver: { name: "nodejs", version: "3.6.11" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "20.6.0" }, platform: "'Node.js v14.17.4, LE (legacy)" }
+2021-10-25T18:55:36.433+0900 I  STORAGE  [conn5] createCollection: feather.boardwalk with provided UUID: 70643f88-14e5-4bb0-a4d6-245b0c9ff6b5 and options: { uuid: UUID("70643f88-14e5-4bb0-a4d6-245b0c9ff6b5") }
+2021-10-25T18:55:36.515+0900 I  INDEX    [conn5] index build: done building index _id_ on ns feather.boardwalk
+2021-10-25T18:55:36.635+0900 I  INDEX    [conn5] index build: starting on feather.boardwalk properties: { v: 2, unique: true, key: { nickName: 1 }, name: "nickName_1", ns: "feather.boardwalk", background: true } using method: Hybrid
+2021-10-25T18:55:36.636+0900 I  INDEX    [conn5] build may temporarily use up to 200 megabytes of RAM
+2021-10-25T18:55:36.638+0900 I  INDEX    [conn5] index build: collection scan done. scanned 0 total records in 0 seconds
+2021-10-25T18:55:36.640+0900 I  INDEX    [conn5] index build: inserted 0 keys from external sorter into index in 0 seconds
+2021-10-25T18:55:36.659+0900 I  INDEX    [conn5] index build: done building index nickName_1 on ns feather.boardwalk
+2021-10-25T18:55:36.699+0900 I  COMMAND  [conn5] command feather.boardwalk command: createIndexes { createIndexes: "boardwalk", indexes: [ { name: "nickName_1", key: { nickName: 1 }, unique: true, background: true } ], lsid: { id: UUID("9703f5ed-5ece-41f4-bc35-e49e89fbacc6") }, $db: "feather" } numYields:0 reslen:114 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 2 } }, ReplicationStateTransition: { acquireCount: { w: 3 } }, Global: { acquireCount: { r: 1, w: 2 } }, Database: { acquireCount: { r: 1, w: 2 } }, Collection: { acquireCount: { r: 4, w: 1, R: 1, W: 2 } }, Mutex: { acquireCount: { r: 4 } } } flowControl:{ acquireCount: 1, timeAcquiringMicros: 1 } storage:{} protocol:op_msg 266ms
+2021-10-25T18:55:36.860+0900 I  INDEX    [conn5] index build: starting on feather.boardwalk properties: { v: 2, unique: true, key: { email: 1 }, name: "email_1", ns: "feather.boardwalk", background: true } using method: Hybrid
+2021-10-25T18:55:36.861+0900 I  INDEX    [conn5] build may temporarily use up to 200 megabytes of RAM
+2021-10-25T18:55:36.862+0900 I  INDEX    [conn5] index build: collection scan done. scanned 0 total records in 0 seconds
+2021-10-25T18:55:36.864+0900 I  INDEX    [conn5] index build: inserted 0 keys from external sorter into index in 0 seconds
+2021-10-25T18:55:36.884+0900 I  INDEX    [conn5] index build: done building index email_1 on ns feather.boardwalk
+2021-10-25T18:55:36.926+0900 I  COMMAND  [conn5] command feather.boardwalk command: createIndexes { createIndexes: "boardwalk", indexes: [ { name: "email_1", key: { email: 1 }, unique: true, background: true } ], lsid: { id: UUID("9703f5ed-5ece-41f4-bc35-e49e89fbacc6") }, $db: "feather" } numYields:0 reslen:114 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 2 } }, ReplicationStateTransition: { acquireCount: { w: 3 } }, Global: { acquireCount: { r: 1, w: 2 } }, Database: { acquireCount: { r: 1, w: 2 } }, Collection: { acquireCount: { r: 2, w: 1, R: 1, W: 2 } }, Mutex: { acquireCount: { r: 4 } } } flowControl:{ acquireCount: 1, timeAcquiringMicros: 1 } storage:{} protocol:op_msg 217ms
+2021-10-25T18:55:37.084+0900 I  INDEX    [conn5] index build: starting on feather.boardwalk properties: { v: 2, unique: true, key: { phoneNumber: 1 }, name: "phoneNumber_1", ns: "feather.boardwalk", background: true } using method: Hybrid
+2021-10-25T18:55:37.086+0900 I  INDEX    [conn5] build may temporarily use up to 200 megabytes of RAM
+2021-10-25T18:55:37.087+0900 I  INDEX    [conn5] index build: collection scan done. scanned 0 total records in 0 seconds
+2021-10-25T18:55:37.089+0900 I  INDEX    [conn5] index build: inserted 0 keys from external sorter into index in 0 seconds
+2021-10-25T18:55:37.110+0900 I  INDEX    [conn5] index build: done building index phoneNumber_1 on ns feather.boardwalk
+2021-10-25T18:55:37.149+0900 I  COMMAND  [conn5] command feather.boardwalk command: createIndexes { createIndexes: "boardwalk", indexes: [ { name: "phoneNumber_1", key: { phoneNumber: 1 }, unique: true, background: true } ], lsid: { id: UUID("9703f5ed-5ece-41f4-bc35-e49e89fbacc6") }, $db: "feather" } numYields:0 reslen:114 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 2 } }, ReplicationStateTransition: { acquireCount: { w: 3 } }, Global: { acquireCount: { r: 1, w: 2 } }, Database: { acquireCount: { r: 1, w: 2 } }, Collection: { acquireCount: { r: 2, w: 1, R: 1, W: 2 } }, Mutex: { acquireCount: { r: 4 } } } flowControl:{ acquireCount: 1, timeAcquiringMicros: 2 } storage:{} protocol:op_msg 216ms
+2021-10-26T02:16:06.436+0900 I  NETWORK  [conn5] end connection 127.0.0.1:49848 (0 connections now open)

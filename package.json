@@ -1,0 +1,28 @@
+{
+  "name": "sns_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.0.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "memory-cache": "^0.2.0",
+    "mongoose": "^5.11.19",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1",
+    "node-sens": "^1.3.0",
+    "request": "^2.88.2"
+  }
+}
